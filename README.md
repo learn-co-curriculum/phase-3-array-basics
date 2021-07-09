@@ -65,7 +65,7 @@ shopping_list.last
 # => "Snickers"
 ```
 
-The `last` method in particular is quite convenient compared to the equivalent
+The `#last` method in particular is quite convenient compared to the equivalent
 JavaScript code:
 
 ```js
@@ -73,7 +73,7 @@ shoppingList[shoppingList.length - 1];
 ```
 
 Ruby also lets you determine the number of elements in an array with the
-`length` method. `length` has an alias method `size` that does the same thing:
+`#length` method. `#length` has an alias method `#size` that does the same thing:
 
 ```rb
 shopping_list.length
@@ -101,7 +101,7 @@ including, the last one."
 
 ### Adding Elements to Arrays
 
-Like JavaScript, and many other languages, the `push` and `unshift` methods can
+Like JavaScript, and many other languages, the `#push` and `#unshift` methods can
 be used to add elements to the end or beginning of arrays respectively:
 
 ```rb
@@ -111,7 +111,7 @@ shopping_list.unshift("Cake")
 # => ["Cake", "Cookies", "Mint Chocolate Chip Ice Cream", "Snickers", "M&Ms"]
 ```
 
-Ruby also has the **shovel method** (`<<`) which does the same thing as `push`,
+Ruby also has the **shovel method** (`<<`) which does the same thing as `#push`,
 but is more commonly used:
 
 ```rb
@@ -119,7 +119,7 @@ shopping_list << "Tums"
 # => ["Cake", "Cookies", "Mint Chocolate Chip Ice Cream", "Snickers", "M&Ms", "Tums"]
 ```
 
-Ruby also has a couple ways to combine multiple arrays. You can use the `concat`:
+Ruby also has a couple ways to combine multiple arrays. You can use the `#concat`:
 
 ```rb
 one_two_three = [1, 2, 3]
@@ -131,7 +131,7 @@ one_two_three
 # => [1, 2, 3, 4, 5, 6]
 ```
 
-`concat` changes the data in the original array, so if you want to combine arrays
+`#concat` changes the data in the original array, so if you want to combine arrays
 without changing the original, you can also use the `+` method:
 
 ```rb
@@ -146,7 +146,7 @@ one_two_three
 
 ### Removing Elements from Arrays
 
-Like JavaScript, and many other languages, the `pop` and `shift` methods can
+Like JavaScript, and many other languages, the `#pop` and `#shift` methods can
 be used to remove elements from the end or beginning of arrays respectively:
 
 ```rb
@@ -169,7 +169,7 @@ Ruby has many other built-in methods which you can explore in the
 **enumerable** methods in a later lesson as well. But for now, here are a few
 other methods that make it convenient to work with arrays in Ruby.
 
-To check if a particular element is present in an array, use `includes?`:
+To check if a particular element is present in an array, use `#includes?`:
 
 ```rb
 letters = ["a", "b", "c"]
@@ -180,9 +180,9 @@ letters.includes?("e")
 ```
 
 > In Ruby, there's a convention that methods that return a boolean value are
-> named with a question mark at the end, like `includes?`.
+> named with a question mark at the end, like `#includes?`.
 
-To reverse all the elements of an array, use `reverse`:
+To reverse all the elements of an array, use `#reverse`:
 
 ```rb
 letters.reverse
@@ -192,7 +192,7 @@ letters
 ```
 
 This returns a new array in the reverse order. You can also reverse the array in
-place (change the data in the array) with the `reverse!` method:
+place (change the data in the array) with the `#reverse!` method:
 
 ```rb
 letters.reverse!
@@ -202,9 +202,9 @@ letters
 ```
 
 > In Ruby, there's a convention that methods that modify the object they're
-> called on end with an exclamation mark, like `reverse!`.
+> called on end with an exclamation mark, like `#reverse!`.
 
-Ruby also has a `sum` method which will add every element in an array:
+Ruby also has a `#sum` method which will add every element in an array:
 
 ```rb
 [1, 2, 3].sum
@@ -217,7 +217,7 @@ Compare this to JavaScript:
 [1, 2, 3].reduce((sum, num) => sum + num);
 ```
 
-Last but not least, Ruby has a `uniq` method for returning only the unique
+Last but not least, Ruby has a `#uniq` method for returning only the unique
 elements from an array:
 
 ```rb
