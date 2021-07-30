@@ -250,7 +250,7 @@ You can also create an array of symbols with `%i`:
 # => [:pending, :resolved, :rejected]
 ```
 
-Don't worry about memorizing this syntax &mdash; just keep this in the back of
+Don't worry about memorizing this syntax — just keep this in the back of
 your mind in case you come across it in any Ruby code you run into.
 
 ## Conclusion
