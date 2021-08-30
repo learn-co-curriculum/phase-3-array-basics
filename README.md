@@ -169,18 +169,18 @@ Ruby has many other built-in methods which you can explore in the
 **enumerable** methods in a later lesson as well. But for now, here are a few
 other methods that make it convenient to work with arrays in Ruby.
 
-To check if a particular element is present in an array, use `#includes?`:
+To check if a particular element is present in an array, use `#include?`:
 
 ```rb
 letters = ["a", "b", "c"]
-letters.includes?("a")
+letters.include?("a")
 # => true
-letters.includes?("e")
+letters.include?("e")
 # => false
 ```
 
 > In Ruby, there's a convention that methods that return a boolean value are
-> named with a question mark at the end, like `#includes?`.
+> named with a question mark at the end, like `#include?`.
 
 To reverse all the elements of an array, use `#reverse`:
 
