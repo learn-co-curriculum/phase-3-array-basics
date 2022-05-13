@@ -95,9 +95,11 @@ shopping_list[0...2]
 # => ["Cookies", "Mint Chocolate Chip Ice Cream"]
 ```
 
-With the Range notation, two dots (`..`) means "all numbers up to and including
-the last one", and three dots (`...`) means "all numbers up to, but not
-including, the last one."
+Note that, in the example above, `shopping_list[0..1]` and
+`shopping_list[0...2]` return the same thing. This is because, with the Range
+notation, two dots (`..`) means "all numbers up to and including the last one",
+and three dots (`...`) means "all numbers up to, but not including, the last
+one."
 
 ### Adding Elements to Arrays
 
